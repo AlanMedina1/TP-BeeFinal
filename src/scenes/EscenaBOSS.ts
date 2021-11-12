@@ -44,8 +44,8 @@ export default class EscenaBOSS extends Phaser.Scene
     this.load.image('obstaculos', 'assets/images/Gameplay_Assets/colliders/tilemap1 prueba.png')
     this.load.image('FlorBoss', 'assets/images/Gameplay_Assets/colliders/girasol.png')
 
-    this.load.image('Avispa', '/assets/images/Gameplay_Assets/Personajes/BOSS/avispa.png')
-    this.load.image('Pium', '/assets/images/Gameplay_Assets/Personajes/BOSS/pium.png')
+    this.load.image('Avispa', 'assets/images/Gameplay_Assets/Personajes/BOSS/avispa.png')
+    this.load.image('Pium', 'assets/images/Gameplay_Assets/Personajes/BOSS/pium.png')
 
     //preload de el fondo del tile 
     this.load.image('FondoNiv', 'assets/images/Menu/fondo attarrdecer.png')

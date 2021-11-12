@@ -32,16 +32,16 @@ export default class EscenaMenu extends Phaser.Scene{
         this.load.audio('MusicaMenu', 'assets/sounds/MUSICA/Musica_Menu.mp3')
         this.load.audio('clic', 'assets/sounds/MUSICA/SFX/Blip_Select.mp3')
         this.load.audio('choquecoll', 'assets/sounds/MUSICA/SFX/collider.mp3')
-        this.load.audio('healthfx', '/assets/sounds/MUSICA/SFX/Powerup.mp3')
-        this.load.audio('pesticidafx', '/assets/sounds/MUSICA/SFX/Pesticida.mp3')
+        this.load.audio('healthfx', 'assets/sounds/MUSICA/SFX/Powerup.mp3')
+        this.load.audio('pesticidafx', 'assets/sounds/MUSICA/SFX/Pesticida.mp3')
 
         //MusicManager 
-        this.load.tilemapTiledJSON('MusicaHUD', '/assets/Config_HUD/HUD.json')
+        this.load.tilemapTiledJSON('MusicaHUD', 'assets/Config_HUD/HUD.json')
    
     
-        this.load.spritesheet('SonidoSprite', '/assets/Config_HUD/sonidosprite.png', {frameWidth: 120, frameHeight: 120})
-        this.load.spritesheet('MusicaSprite', '/assets/Config_HUD/musicasprite.png', {frameWidth: 120, frameHeight: 120})
-        this.load.spritesheet('PausaSprite', '/assets/Config_HUD/pausasprite.png', {frameWidth: 95, frameHeight: 110})
+        this.load.spritesheet('SonidoSprite', 'assets/Config_HUD/sonidosprite.png', {frameWidth: 120, frameHeight: 120})
+        this.load.spritesheet('MusicaSprite', 'assets/Config_HUD/musicasprite.png', {frameWidth: 120, frameHeight: 120})
+        this.load.spritesheet('PausaSprite', 'assets/Config_HUD/pausasprite.png', {frameWidth: 95, frameHeight: 110})
     }
 
     create() {
