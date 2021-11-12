@@ -51,9 +51,6 @@ export default class Game3 extends Phaser.Scene
     this.load.tilemapTiledJSON('BeeGame3', 'assets/Niv3/Niv3Bee.json')
 
     this.load.image('Poison', 'assets/images/Gameplay_Assets/power up/pesticida.png')
-
-    this.load.audio('healthfx', '/assets/sounds/MUSICA/SFX/Powerup.mp3')
-    this.load.audio('pesticidafx', '/assets/sounds/MUSICA/SFX/Pesticida.mp3')
     }
 
     

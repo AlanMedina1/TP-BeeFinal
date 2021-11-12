@@ -25,15 +25,6 @@ constructor()
 super({key: 'SonidosGeneral', active: true})
 }
 
-preload ()
-{
-    this.load.tilemapTiledJSON('MusicaHUD', '/assets/Config_HUD/HUD.json')
-    //this.load.atlas();
-    
-    this.load.spritesheet('SonidoSprite', '/assets/Config_HUD/sonidosprite.png', {frameWidth: 120, frameHeight: 120})
-    this.load.spritesheet('MusicaSprite', '/assets/Config_HUD/musicasprite.png', {frameWidth: 120, frameHeight: 120})
-    this.load.spritesheet('PausaSprite', '/assets/Config_HUD/pausasprite.png', {frameWidth: 95, frameHeight: 110})
-}
 create ()
 {   
     const map = this.make.tilemap({ key: 'MusicaHUD' });
