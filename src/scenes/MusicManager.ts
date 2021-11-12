@@ -27,7 +27,7 @@ super({key: 'SonidosGeneral', active: true})
 
 preload ()
 {
-    this.load.tilemapTiledJSON('MusicaHUD', '/assets/Config HUD/HUD.json')
+    this.load.tilemapTiledJSON('MusicaHUD', '/assets/Config_HUD/HUD.json')
     //this.load.atlas();
     
     this.load.spritesheet('SonidoSprite', '/assets/Config_HUD/sonidosprite.png', {frameWidth: 120, frameHeight: 120})
