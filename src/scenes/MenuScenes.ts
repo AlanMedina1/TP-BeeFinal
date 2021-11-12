@@ -4,17 +4,9 @@ import { FETCHED, FETCHING, READY, TODO } from '~/enums/status'
 import { getTranslations, getPhrase } from '~/services/translations'
 
 export default class MenuScene extends Phaser.Scene{
-    private textSpanish
-    private textGerman
-    private textEnglish
-    private textPortuguese
-
-    private spanish
-    private english
-
 
     private updatedTextInScene
-    private updatedString = 'Siguiente'
+    private updatedString = ''
     private wasChangedLanguage = TODO
 
     constructor () {
@@ -87,9 +79,9 @@ export default class MenuScene extends Phaser.Scene{
 
 //Segunda parte
         
-        // this.updatedTextInScene = this.add.text(buttonUpdate.x,buttonUpdate.y, getPhrase(this.updatedString), {
-		// 	color: '#000000'
-		// })
+            this.updatedTextInScene = this.add.text(buttonUpdate.x,buttonUpdate.y, getPhrase(this.updatedString), {
+		 	color: '#000000'
+		 })
 		.setOrigin(0.5)
     }
 

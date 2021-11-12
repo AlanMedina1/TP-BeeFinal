@@ -2,7 +2,7 @@ import Phaser, { Sound } from 'phaser'
 import StateMachine from '../statemachine/StateMachine'
 import { sharedInstance as events } from './EventCenter'
 import ObstaclesController from './ObstaclesController'
-
+import sonidogeneral from './MusicManager'
 
 type CursorKeys = Phaser.Types.Input.Keyboard.CursorKeys
 
@@ -19,6 +19,7 @@ export default class PlayerController
 	private stateMachine: StateMachine
 
 	private health = 3
+
 
     constructor(scene: Phaser.Scene, sprite: Phaser.Physics.Matter.Sprite, cursors: CursorKeys, obstacles: ObstaclesController)
 	{
@@ -69,7 +70,7 @@ export default class PlayerController
 		})
 		.addState('PiumHit', {
 			onEnter: this.picaduraAvispaEnter,
-			
+			//onUpdate: this.picaduraAvispaUpdate
 		})
         .setState('idle')
 

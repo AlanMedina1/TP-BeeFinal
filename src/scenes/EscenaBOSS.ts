@@ -12,6 +12,8 @@ export default class EscenaBOSS extends Phaser.Scene
     private obstacles!: ObstaclesController
     sound: any;
 
+    private aguijon;
+
     constructor()
     {
         super('GameBoss')
@@ -79,7 +81,7 @@ export default class EscenaBOSS extends Phaser.Scene
     //Conjunto de Patrones/Aka Tileset
 
     const tileset1 = map.addTilesetImage('Fondo', 'FondoNiv'); //Primero el nombre del conjunto y luego como se definio en Visual
-
+    //const tileset2 = map.addTilesetImage('OBSTACULOS','obstaculos');
     const tileset3 = map.addTilesetImage('SUELO', 'pesticorto' );
     const tileset4 = map.addTilesetImage('Girasolcito', 'FlorBoss')
     
@@ -183,7 +185,7 @@ export default class EscenaBOSS extends Phaser.Scene
         //Config Avispa.
         let Avispa = this.add.image(1400, 200, 'Avispa')
         .setScale(0.7)
-        this.tweens.add({
+         let AvispaT = this.tweens.add({
 
              targets: Avispa,
 

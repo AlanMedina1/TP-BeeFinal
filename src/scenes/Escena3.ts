@@ -3,6 +3,8 @@ import { getPhrase } from '~/services/translations'
 
 export default class Escena3 extends Phaser.Scene
 {
+    sound: any;
+
     constructor() {
       super('creditos');
     }
@@ -13,6 +15,7 @@ export default class Escena3 extends Phaser.Scene
         this.load.image('bee', 'assets/images/Pantallas_Assets/Opciones/Abejita.png');
         this.load.image('nombres', 'assets/images/Pantallas_Assets/Opciones/nombres.png');
         this.load.image('back', 'assets/images/Pantallas_Assets/Opciones/VOLVER.png');
+        this.load.audio('clic', 'assets/sounds/MUSICA/SFX/Blip_Select.mp3')
     }
     
     create() {
@@ -32,6 +35,6 @@ export default class Escena3 extends Phaser.Scene
        
         var volver = this.add.image(800, 800, 'back')
         volver.setInteractive()
-        volver.on('pointerdown', () => this.scene.start('inicio') );
+        volver.on('pointerdown', () => this.scene.start('inicio'));
     }
     }

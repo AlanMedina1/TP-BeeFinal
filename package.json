@@ -5,6 +5,7 @@
 	"scripts": {
 		"start": "parcel src/index.html -p 8000",
 		"build": "parcel build src/index.html --out-dir docs",
+		"build-gh": "parcel build src/index.html --out-dir docs --public-url /TP-BeeFinal/",
 		"test": "echo \"Error: no test specified\" && exit 1",
 		"lint": "eslint ./src --ext .js,.jsx,.ts,.tsx"
 	},

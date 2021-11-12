@@ -1,5 +1,5 @@
 import Phaser from 'phaser'
-import sonidogeneral from './MusicManager'
+
 import { getPhrase } from '~/services/translations'
 
 export default class EscenaDYK3 extends Phaser.Scene{
@@ -49,8 +49,9 @@ export default class EscenaDYK3 extends Phaser.Scene{
         var SIG = this.add.image(1300, 750, 'play')
         SIG.setInteractive()
        
-        SIG.on('pointerdown', () => this.scene.start('gamelv3') );
-
+        SIG.on('pointerdown', () => {this.scene.start('gamelv3') 
+        this.sound.SonidoClick()});
+        
     }
     
     

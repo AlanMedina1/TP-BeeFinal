@@ -1,5 +1,5 @@
 import Phaser from 'phaser'
-import sonidogeneral from './MusicManager'
+
 import { getPhrase } from '~/services/translations'
 
 export default class EscenaDYK2 extends Phaser.Scene{
@@ -17,6 +17,7 @@ export default class EscenaDYK2 extends Phaser.Scene{
         this.load.image('bee hexagonal', 'assets/images/Pantallas_Assets/Etapa Superada/bee hexagonal.png')
         this.load.image('play', 'assets/images/Menu/play ico.png')
         this.load.audio('MusicaDYK', 'assets/sounds/MUSICA/mini-cancion-sabias-que.mp3')
+        this.load.audio('clic', 'assets/sounds/MUSICA/SFX/Blip_Select.mp3')
     }
 
     create ()
@@ -49,7 +50,8 @@ export default class EscenaDYK2 extends Phaser.Scene{
         var SIG = this.add.image(1300, 750, 'play')
         SIG.setInteractive()
        
-        SIG.on('pointerdown', () => this.scene.start('gamelv2') );
+        SIG.on('pointerdown', () => {this.scene.start('gamelv2') 
+        this.sound.SonidoClick()});
 
     }
     

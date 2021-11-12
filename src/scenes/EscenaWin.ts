@@ -18,7 +18,8 @@ export default class EscenaWin extends Phaser.Scene
         this.load.image('bee hexagonal', 'assets/images/Pantallas_Assets/Etapa Superada/bee hexagonal.png')
 
         this.load.image('Cuadro',  'assets/images/Pantallas_Assets/Etapa Superada/Rectángulo.png')
-
+        
+        this.load.audio('clic', 'assets/sounds/MUSICA/SFX/Blip_Select.mp3')
         this.load.audio('MusicaWin', 'assets/sounds/MUSICA/Musica_Final_Bueno.mp3')
 
     }

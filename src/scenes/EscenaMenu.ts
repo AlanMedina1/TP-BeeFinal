@@ -1,7 +1,4 @@
 import Phaser from 'phaser'
-import sonidogeneral from './MusicManager'
-import UNRaf
- from './UNRaf';
 export default class EscenaMenu extends Phaser.Scene{
 
     sound: any;

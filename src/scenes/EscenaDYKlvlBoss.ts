@@ -16,6 +16,7 @@ export default class EscenaDYKBoss extends Phaser.Scene{
         this.load.image('FondoDYK',  'assets/images/Pantallas_Assets/Opciones/Fondo Azul.png')
         this.load.image('bee hexagonal', 'assets/images/Pantallas_Assets/Etapa Superada/bee hexagonal.png')
         this.load.image('play', 'assets/images/Menu/play ico.png')
+        this.load.audio('clic', 'assets/sounds/MUSICA/SFX/Blip_Select.mp3')
         this.load.audio('MusicaDYK', 'assets/sounds/MUSICA/mini-cancion-sabias-que.mp3')
     }
 
@@ -49,7 +50,8 @@ export default class EscenaDYKBoss extends Phaser.Scene{
         var SIG = this.add.image(1300, 750, 'play')
         SIG.setInteractive()
        
-        SIG.on('pointerdown', () => this.scene.start('GameBoss') );
+        SIG.on('pointerdown', () => {this.scene.start('GameBoss') 
+        this.sound.SonidoClick()});
 
     }
     
