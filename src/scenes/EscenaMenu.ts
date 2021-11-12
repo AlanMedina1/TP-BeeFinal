@@ -38,7 +38,7 @@ export default class EscenaMenu extends Phaser.Scene{
         this.load.audio('pesticidafx', 'assets/sounds/MUSICA/SFX/Pesticida.mp3')
 
         //MusicManager 
-        this.load.tilemapTiledJSON('MusicaHUD', 'assets/Config_HUD/HUD.json')
+        this.load.tilemapTiledJSON('HUD', 'assets/Config_HUD/HUD.json')
    
     
         this.load.spritesheet('SonidoSprite', 'assets/Config_HUD/sonidosprite.png', {frameWidth: 120, frameHeight: 120})
