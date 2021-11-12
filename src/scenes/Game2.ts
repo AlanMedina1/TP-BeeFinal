@@ -33,16 +33,16 @@ export default class Game2 extends Phaser.Scene
 {
 //Preloads del personaje
     
-this.load.atlas('BEE', 'assets/images/Gameplay Assets/Personajes/JSONTRY/BEE.png', 'assets/images/Gameplay Assets/Personajes/JSONTRY/BEE.json'); 
+this.load.atlas('BEE', 'assets/images/Gameplay_Assets/Personajes/JSONTRY/BEE.png', 'assets/images/Gameplay_Assets/Personajes/JSONTRY/BEE.json'); 
 
 //preload de los objetos a usar
-this.load.image('health', 'assets/images/Gameplay Assets/power up/PU vida1.png')
-this.load.image('healthempty', 'assets/images/Gameplay Assets/power up/PU vidasin22.png')
+this.load.image('health', 'assets/images/Gameplay_Assets/power up/PU vida1.png')
+this.load.image('healthempty', 'assets/images/Gameplay_Assets/power up/PU vidasin22.png')
 //Preloads de los colliders
-this.load.image('pesticorto', 'assets/images/Gameplay Assets/colliders/collider rojo pesticida corto.png')
+this.load.image('pesticorto', 'assets/images/Gameplay_Assets/colliders/collider rojo pesticida corto.png')
 //Obstaculos
-this.load.image('obstaculos2', 'assets/images/Gameplay Assets/colliders/CollidersLV2.png')
-this.load.image('Flor2', 'assets/images/Gameplay Assets/colliders/FlorNiv2.png')
+this.load.image('obstaculos2', 'assets/images/Gameplay_Assets/colliders/CollidersLV2.png')
+this.load.image('Flor2', 'assets/images/Gameplay_Assets/colliders/FlorNiv2.png')
 
 //preload de el fondo del tile 
 this.load.image('FondoSig2', 'assets/images/Menu/fondo ciudad.png')
@@ -50,8 +50,6 @@ this.load.image('FondoSig2', 'assets/images/Menu/fondo ciudad.png')
     
 this.load.tilemapTiledJSON('BeeGame2', 'assets/Niv2/BeeGameTry.json')
 
-this.load.audio('healthfx', '/assets/sounds/MUSICA/SFX/Powerup.mp3')
-    this.load.audio('pesticidafx', '/assets/sounds/MUSICA/SFX/Pesticida.mp3')
 }
 
 create () 

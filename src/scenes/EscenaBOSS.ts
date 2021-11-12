@@ -33,19 +33,19 @@ export default class EscenaBOSS extends Phaser.Scene
  {
      //Preloads del personaje
     
-    this.load.atlas('BEE', 'assets/images/Gameplay Assets/Personajes/JSONTRY/BEE.png', 'assets/images/Gameplay Assets/Personajes/JSONTRY/BEE.json'); 
+    this.load.atlas('BEE', 'assets/images/Gameplay_Assets/Personajes/JSONTRY/BEE.png', 'assets/images/Gameplay_Assets/Personajes/JSONTRY/BEE.json'); 
 
     //preload de los objetos a usar
-    this.load.image('health', 'assets/images/Gameplay Assets/power up/PU vida1.png')
-    this.load.image('healthempty', 'assets/images/Gameplay Assets/power up/PU vidasin22.png')
+    this.load.image('health', 'assets/images/Gameplay_Assets/power up/PU vida1.png')
+    this.load.image('healthempty', 'assets/images/Gameplay_Assets/power up/PU vidasin22.png')
     //Preloads de los colliders
-    this.load.image('pesticorto', 'assets/images/Gameplay Assets/colliders/collider rojo pesticida corto.png')
+    this.load.image('pesticorto', 'assets/images/Gameplay_Assets/colliders/collider rojo pesticida corto.png')
     //Obstaculos
-    this.load.image('obstaculos', 'assets/images/Gameplay Assets/colliders/tilemap1 prueba.png')
-    this.load.image('FlorBoss', 'assets/images/Gameplay Assets/colliders/girasol.png')
+    this.load.image('obstaculos', 'assets/images/Gameplay_Assets/colliders/tilemap1 prueba.png')
+    this.load.image('FlorBoss', 'assets/images/Gameplay_Assets/colliders/girasol.png')
 
-    this.load.image('Avispa', '/assets/images/Gameplay Assets/Personajes/BOSS/avispa.png')
-    this.load.image('Pium', '/assets/images/Gameplay Assets/Personajes/BOSS/pium.png')
+    this.load.image('Avispa', '/assets/images/Gameplay_Assets/Personajes/BOSS/avispa.png')
+    this.load.image('Pium', '/assets/images/Gameplay_Assets/Personajes/BOSS/pium.png')
 
     //preload de el fondo del tile 
     this.load.image('FondoNiv', 'assets/images/Menu/fondo attarrdecer.png')
@@ -53,8 +53,7 @@ export default class EscenaBOSS extends Phaser.Scene
 
     //preloads musica
     this.load.audio('MusicaBOSS', 'assets/sounds/MUSICA/Musica_Nivel_02_Boss.mp3')
-    this.load.audio('healthfx', '/assets/sounds/MUSICA/SFX/Powerup.mp3')
-    this.load.audio('pesticidafx', '/assets/sounds/MUSICA/SFX/Pesticida.mp3')
+
 
     //Preload Tilemaps
     

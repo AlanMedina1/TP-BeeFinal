@@ -20,10 +20,10 @@ export default class EscenaMenu extends Phaser.Scene{
         //this.load.image('options', 'assets/images/Menu/ajuste.png')
 
         //Preloads de los colliders
-        this.load.image('pesticorto', 'assets/images/Gameplay Assets/colliders/collider rojo pesticida corto.png')
-        this.load.image('pestilargo', 'assets/images/Gameplay Assets/colliders/collider rojo pesticida.png')
-        this.load.image('pestimedio', 'assets/images/Gameplay Assets/colliders/collider rojo pesticida medio.png')
-        this.load.image('matamosca', 'assets/images/Gameplay Assets/colliders/matamoscas grande.png')
+        this.load.image('pesticorto', 'assets/images/Gameplay_Assets/colliders/collider rojo pesticida corto.png')
+        this.load.image('pestilargo', 'assets/images/Gameplay_Assets/colliders/collider rojo pesticida.png')
+        this.load.image('pestimedio', 'assets/images/Gameplay_Assets/colliders/collider rojo pesticida medio.png')
+        this.load.image('matamosca', 'assets/images/Gameplay_Assets/colliders/matamoscas grande.png')
 
         this.load.audio('MusicaNiv1', 'assets/sounds/MUSICA/Musica_Nivel_01_Gameplay.mp3')
         this.load.audio('MusicaNiv2', 'assets/sounds/MUSICA/Musica_Nivel_02_Gameplay.mp3')
@@ -32,6 +32,8 @@ export default class EscenaMenu extends Phaser.Scene{
         this.load.audio('MusicaMenu', 'assets/sounds/MUSICA/Musica_Menu.mp3')
         this.load.audio('clic', 'assets/sounds/MUSICA/SFX/Blip_Select.mp3')
         this.load.audio('choquecoll', 'assets/sounds/MUSICA/SFX/collider.mp3')
+        this.load.audio('healthfx', '/assets/sounds/MUSICA/SFX/Powerup.mp3')
+        this.load.audio('pesticidafx', '/assets/sounds/MUSICA/SFX/Pesticida.mp3')
     }
 
     create() {

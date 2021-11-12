@@ -34,23 +34,23 @@ export default class Game3 extends Phaser.Scene
     {
     //Preloads del personaje
     
-    this.load.atlas('BEE', 'assets/images/Gameplay Assets/Personajes/JSONTRY/BEE.png', 'assets/images/Gameplay Assets/Personajes/JSONTRY/BEE.json'); 
+    this.load.atlas('BEE', 'assets/images/Gameplay_Assets/Personajes/JSONTRY/BEE.png', 'assets/images/Gameplay_Assets/Personajes/JSONTRY/BEE.json'); 
 
     //preload de los objetos a usar
-    this.load.image('health', 'assets/images/Gameplay Assets/power up/PU vida1.png')
-    this.load.image('healthempty', 'assets/images/Gameplay Assets/power up/PU vidasin22.png')
+    this.load.image('health', 'assets/images/Gameplay_Assets/power up/PU vida1.png')
+    this.load.image('healthempty', 'assets/images/Gameplay_Assets/power up/PU vidasin22.png')
     //Preloads de los colliders
-    this.load.image('pesticorto', 'assets/images/Gameplay Assets/colliders/collider rojo pesticida corto.png')
+    this.load.image('pesticorto', 'assets/images/Gameplay_Assets/colliders/collider rojo pesticida corto.png')
     //Obstaculos
-    this.load.image('obstaculos3', 'assets/images/Gameplay Assets/colliders/CollNiv3.png')
-    this.load.image('Flor3', 'assets/images/Gameplay Assets/colliders/FlorNiv3.png')
+    this.load.image('obstaculos3', 'assets/images/Gameplay_Assets/colliders/CollNiv3.png')
+    this.load.image('Flor3', 'assets/images/Gameplay_Assets/colliders/FlorNiv3.png')
 
     //preload de el fondo del tile 
     this.load.image('FondoSig3', 'assets/images/Menu/fondo attarrdecer.png')
     //Preload Tilemaps
     this.load.tilemapTiledJSON('BeeGame3', 'assets/Niv3/Niv3Bee.json')
 
-    this.load.image('Poison', 'assets/images/Gameplay Assets/power up/pesticida.png')
+    this.load.image('Poison', 'assets/images/Gameplay_Assets/power up/pesticida.png')
 
     this.load.audio('healthfx', '/assets/sounds/MUSICA/SFX/Powerup.mp3')
     this.load.audio('pesticidafx', '/assets/sounds/MUSICA/SFX/Pesticida.mp3')
